@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie - Food Delivery App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header">
+    <div class="logo">Foodie</div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#restaurants">Restaurants</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" class="btn btn-outline">Login</a>
+      <a href="#" class="btn btn-primary">Sign Up</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Delicious food, delivered to you</h1>
+        <p>Order from your favorite restaurants and get your meal delivered fast, fresh and hot.</p>
+        <a href="#restaurants" class="btn btn-primary">Order Now</a>
+      </div>
+      <img src="images/food.png" alt="Plate of delicious food">
+    </section>
+
+    <!-- SEARCH FORM -->
+    <section class="search-section">
+      <form class="search-form">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Enter your location">
+
+        <label for="category">Category</label>
+        <select id="category">
+          <option>All Categories</option>
+          <option>Pizza</option>
+          <option>Chinese</option>
+          <option>Burger</option>
+          <option>Sushi</option>
+          <option>Pasta</option>
+          <option>Desert</option>
+          <option>Indian Thali</option>
+          <option>South Indian</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="section">
+      <h2>Browse by Category</h2>
+      <ul class="category-grid">
+        <li class="category-card">🍕 Pizza</li>
+        <li class="category-card">🍜Chinese</li>
+        <li class="category-card">🍔 Burger</li>
+        <li class="category-card">🍣 Sushi</li>
+        <li class="category-card">🍝 Pasta</li>
+        <li class="category-card">🍰 Dessert</li>
+        <li class="category-card">🍲 Indian Thali</li>
+        <li class="category-card">🥘 South Indian</li>
+
+      </ul>
+    </section>
+
+    <!-- RESTAURANTS -->
+    <section id="restaurants" class="section">
+      <h2>Featured Restaurants</h2>
+      <div class="restaurant-grid">
+        <article class="card">
+          <img src="images/pizza.png" alt="Pizza Palace interior">
+          <div class="card-body">
+            <h3>Pizza Palace</h3>
+            <p>Italian • Pizza</p>
+            <span class="rating">⭐ 4.5</span>
+          </div>
+        </article>
+        <!-- Aise hi 3 aur cards copy-paste karo -->
+          <article class="card">
+          <img src="images/chinese.png" alt="Chinese Hub restaurant">
+          <div class="card-body">
+            <h3>Chinese Hub</h3>
+            <p>Chinese • Spicy </p>
+            <span class="rating">⭐ 4.6</span>
+          </div>
+        </article>
+         <article class="card">
+          <img src="images/burger.png" alt="Burger King restaurant">
+          <div class="card-body">
+            <h3>Burger King</h3>
+            <p>Cheesey • Enjoyable</p>
+            <span class="rating">⭐ 4.2</span>
+          </div>
+        </article>
+         <article class="card">
+          <img src="images/sushi.png" alt="Sushi Hub">
+          <div class="card-body">
+            <h3>Korean House</h3>
+            <p>Korean • Delicious</p>
+            <span class="rating">⭐ 4.9</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/deserts.png" alt="Mouth Watering Desert Place">
+          <div class="card-body">
+            <h3>Desert Kingdom</h3>
+            <p>Sweetful • 10/10</p>
+            <span class="rating">⭐ 5.0</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/indian_thali.png" alt=" Indian House restaurant">
+          <div class="card-body">
+            <h3>North Indian House</h3>
+            <p>Heart Melting • Mouth Watering</p>
+            <span class="rating">⭐ 4.8</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/south_indian.png" alt=" South Indian House restaurant">
+          <div class="card-body">
+            <h3>Pizza Palace</h3>
+            <p>Savory • Spicy</p>
+            <span class="rating">⭐ 4.7</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section id="offers" class="section offers">
+      <h2>Promo Offers</h2>
+      <div class="offer-grid">
+        <article class="offer-card"><h3>Get 50% OFF</h3><p>On your first order</p></article>
+        <article class="offer-card"><h3>Free Delivery</h3><p>On orders above ₹499</p></article>
+        <article class="offer-card"><h3>Buy 1 Get 1</h3><p>On selected burgers</p></article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <article class="testimonial">
+          <img src="images/user1.png" alt="Customer Amit">
+          <p>"Great food and super fast delivery!"</p>
+          <h4>Amit</h4>
+        </article>
+        <!-- 2 aur testimonials -->
+         <article class="testimonial">
+          <img src="images/user2.png" alt="Customer Amit">
+          <p>"Really good value for the quality."</p>
+          <h4>Rhiti</h4>
+        </article>
+        <article class="testimonial">
+          <img src="images/user3.png" alt="Customer Amit">
+          <p>"The presentation is beautiful, and the flavor is exquisite."</p>
+          <h4>Cheeku</h4>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Contact: <a href="mailto:hello@foodie.com">hello@foodie.com</a></p>
+    <ul class="social-links">
+      <li><a href="#" aria-label="Facebook">Facebook</a></li>
+      <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      <li><a href="#" aria-label="Twitter">Twitter</a></li>
+    </ul>
+    <p>&copy; 2026 Foodie. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
